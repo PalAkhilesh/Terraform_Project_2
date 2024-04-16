@@ -1,0 +1,10 @@
+variable "HTC_POC_USECASE2_618579_GlueJob_Name" {}
+variable "HTC_POC_USECASE2_618579_GlueJob_Description" {}
+variable "HTC_POC_USECASE2_618579_GlueJob_Command_Name" {}
+variable "HTC_POC_USECASE2_618579_GlueJob_Script_Runtime" {}
+variable "iam_role_arn" {}
+variable "HTC_POC_USECASE2_618579_BUCKET_FOLDER_Glue_Script" {}
+variable "HTC_POC_USECASE2_618579_BUCKET" {}
+variable "HTC_POC_USECASE2_618579_BUCKET_NAME" {}
+variable "HTC_POC_USECASE2_618579_SNS_arn" {}
+variable "public_ip" {}
