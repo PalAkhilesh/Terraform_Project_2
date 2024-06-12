@@ -1,9 +1,9 @@
 variable "common_tags" {}
-variable "HTC_POC_USECASE2_618579_BUCKET_NAME" {}
-variable "HTC_POC_USECASE2_618579_BUCKET_KEY_FOLDER" {}
+variable "POC_USECASE2_BUCKET_NAME" {}
+variable "POC_USECASE2_BUCKET_KEY_FOLDER" {}
 variable "CSV_FILE_PATH" {}
-variable "HTC_POC_USECASE2_618579_Lambda" {}
-variable "HTC_POC_USECASE2_618579_Lambda_invoke_arn" {}
-variable "HTC_POC_USECASE2_618579_LambdaArn_Coded" {}
-variable "HTC_POC_USECASE2_618579_Lambda_Name" {}
-variable "HTC_POC_USECASE2_618579_BUCKET_FOLDER_Glue_Script" {}
+variable "POC_USECASE2_Lambda" {}
+variable "POC_USECASE2_Lambda_invoke_arn" {}
+variable "POC_USECASE2_LambdaArn_Coded" {}
+variable "POC_USECASE2_Lambda_Name" {}
+variable "POC_USECASE2_BUCKET_FOLDER_Glue_Script" {}

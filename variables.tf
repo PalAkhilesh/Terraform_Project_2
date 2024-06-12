@@ -13,17 +13,17 @@ variable "common_tags" {}
 ##################################################
 #S3-bucket creation
 ##################################################
-variable "HTC_POC_USECASE2_618579_BUCKET_NAME" {}
-variable "HTC_POC_USECASE2_618579_BUCKET_KEY_FOLDER" {}
+variable "POC_USECASE2_BUCKET_NAME" {}
+variable "POC_USECASE2_BUCKET_KEY_FOLDER" {}
 variable "CSV_FILE_PATH" {}
-variable "HTC_POC_USECASE2_618579_BUCKET_FOLDER_Glue_Script" {}
+variable "POC_USECASE2_BUCKET_FOLDER_Glue_Script" {}
 
 ####################################################
 #SNS
 ####################################################
-variable "HTC_POC_USECASE2_618579_SNS_NAME" {}
-variable "HTC_POC_USECASE2_618579_SNS_SUBSCRIPTION_ENDPOINT" {}
-variable "HTC_POC_USECASE2_618579_SNS_SUBSCRIPTION_PROTOCOL" {}
+variable "POC_USECASE2_SNS_NAME" {}
+variable "POC_USECASE2_SNS_SUBSCRIPTION_ENDPOINT" {}
+variable "POC_USECASE2_SNS_SUBSCRIPTION_PROTOCOL" {}
 
 
 ####################################################
@@ -37,29 +37,29 @@ variable "policy_attachment" {}
 #####################################################
 #Lambda
 #####################################################
-variable "HTC_POC_USECASE2_618579_LambdaFunction" {}
-variable "HTC_POC_USECASE2_618579_LambdaFunction_archives" {}
-variable "HTC_POC_USECASE2_618579_LambdaFunction_FileName" {}
-variable "HTC_POC_USECASE2_618579_LambdaFunctionName" {}
-variable "HTC_POC_USECASE2_618579_LambdaFunction_Handler" {}
-variable "HTC_POC_USECASE2_618579_LambdaFunction_Runtime" {}
-variable "HTC_POC_USECASE2_618579_LambdaArn_Coded" {}
+variable "POC_USECASE2_LambdaFunction" {}
+variable "POC_USECASE2_LambdaFunction_archives" {}
+variable "POC_USECASE2_LambdaFunction_FileName" {}
+variable "POC_USECASE2_LambdaFunctionName" {}
+variable "POC_USECASE2_LambdaFunction_Handler" {}
+variable "POC_USECASE2_LambdaFunction_Runtime" {}
+variable "POC_USECASE2_LambdaArn_Coded" {}
 
 
 ##########################################################
 #GLUE-JOB
 #########################################################
-variable "HTC_POC_USECASE2_618579_GlueJob_Name" {}
-variable "HTC_POC_USECASE2_618579_GlueJob_Description" {}
-variable "HTC_POC_USECASE2_618579_GlueJob_Command_Name" {}
-variable "HTC_POC_USECASE2_618579_GlueJob_Script_Runtime" {}
-variable "HTC_POC_USECASE2_618579_GlueJob_Script_Name" {}
+variable "POC_USECASE2_GlueJob_Name" {}
+variable "POC_USECASE2_GlueJob_Description" {}
+variable "POC_USECASE2_GlueJob_Command_Name" {}
+variable "POC_USECASE2_GlueJob_Script_Runtime" {}
+variable "POC_USECASE2_GlueJob_Script_Name" {}
 
 
 ##########################################################
 #Ec2
 ##########################################################
-variable "HTC_POC_618579_USECASE2_2_INSTANCE_AMI_ID" {}
-variable "HTC_POC_618579_USECASE2_2_EC2_INSTANCE_TYPE" {}
-variable "HTC_POC_OP_618579_vpc_security_group_ids" {}
-variable "HTC_POC_OP_618579_key_name" {}
+variable "POC_USECASE2_INSTANCE_AMI_ID" {}
+variable "POC_USECASE2_EC2_INSTANCE_TYPE" {}
+variable "POC_USECASE2_vpc_security_group_ids" {}
+variable "POC_USECASE2_key_name" {}

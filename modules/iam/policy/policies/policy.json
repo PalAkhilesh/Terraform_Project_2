@@ -2,7 +2,7 @@
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "USECASE22",
+            "Sid": "POC_USECASE2",
             "Effect": "Allow",
             "Action": [
                

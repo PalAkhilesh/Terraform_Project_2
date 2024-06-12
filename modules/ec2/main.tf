@@ -1,10 +1,10 @@
-resource "aws_instance" "HTC_POC_618579_USECASE2_2_EC2_INSTANCE" {
-  ami           = var.HTC_POC_618579_USECASE2_2_INSTANCE_AMI_ID  # Replace with your desired AMI ID
-  instance_type = var.HTC_POC_618579_USECASE2_2_EC2_INSTANCE_TYPE
+resource "aws_instance" "POC_USECASE2_EC2_INSTANCE" {
+  ami           = var.POC_USECASE2_INSTANCE_AMI_ID  # Replace with your desired AMI ID
+  instance_type = var.POC_USECASE2_EC2_INSTANCE_TYPE
   key_name      = aws_key_pair.generated_key.key_name # Replace with your key pair name
  
   depends_on = [aws_key_pair.generated_key]
-  vpc_security_group_ids = [var.HTC_POC_OP_618579_vpc_security_group_ids]
+  vpc_security_group_ids = [var.POC_USECASE2_vpc_security_group_ids]
  
   user_data = <<-EOF
                 #!/bin/bash
@@ -39,14 +39,14 @@ resource "tls_private_key" "terrafrom_generated_private_key" {
  
 resource "aws_key_pair" "generated_key" {
   # Name of key : Write the custom name of your key
-  key_name   = var.HTC_POC_OP_618579_key_name
+  key_name   = var.POC_USECASE2_key_name
   # Public Key: The public will be generated using the reference of tls_private_key.terrafrom_generated_private_key
   public_key = tls_private_key.terrafrom_generated_private_key.public_key_openssh
   # Store private key :  Generate and save private key(aws_keys_pairs.pem) in current directory
   provisioner "local-exec" {
     command = <<-EOT
-      echo '${tls_private_key.terrafrom_generated_private_key.private_key_pem}' > awsUSECASE22_618579_key_pair.pem
-      chmod 400 awsUSECASE22_618579_key_pair.pem
+      echo '${tls_private_key.terrafrom_generated_private_key.private_key_pem}' > awsPOC_USECASE2_618579_key_pair.pem
+      chmod 400 awsPOC_USECASE2_618579_key_pair.pem
     EOT
   }
 }

@@ -48,12 +48,12 @@ def transfer_data_to_s3(file_path, bucket_name, object_key, aws_access_key, aws_
 
 if __name__ == "__main__":
     # Replace these values with your specific details
-    file_path = 'C:/Users/akhilesh.pal/Documents/HTC_POC_USECASE_618579_TERRAFORM/modules/data-file/customer.csv'
+    file_path = 'your_csv_file_path'
     # bucket_name = 'my-test-b`ucket-618579'
-    object_key = 'row_data'
+    object_key = 'folder_name'
     # aws_access_key = provide your aws_access_key
     # aws_secret_key = provide your aws_secret_key
-    file_name = 'customer.csv'
+    file_name = 'xyz.csv'
 
     transfer_data_to_s3(file_path, bucket_name, object_key, aws_access_key, aws_secret_key, file_name)
 

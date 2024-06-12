@@ -1,4 +1,4 @@
-data "aws_iam_policy_document" "HTC_POC_OP_618579_ASSUME_ROLE" {
+data "aws_iam_policy_document" "POC_USECASE2_ASSUME_ROLE" {
   statement {
     effect = "Allow"
 
